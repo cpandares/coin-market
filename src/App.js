@@ -11,15 +11,15 @@ function App() {
  
   return (
     <BrowserRouter>
-    <div style={{
-      backgroundColor: "#14161a",
-      color: "white",
-      minHeight: "100vh",
-    }}>
+      <div style={{
+        backgroundColor: "#14161a",
+        color: "white",
+        minHeight: "100vh",
+      }}>
         <Header />
 
         <Route exact  path="/" component={ Home} />
-         <Route exact path="/coins/:id" component={ CoinPage } />
+        <Route exact path="/coins/:id" component={ CoinPage } />
       </div>
     </BrowserRouter>
   );
